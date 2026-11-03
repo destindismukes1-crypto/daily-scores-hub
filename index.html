@@ -259,7 +259,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
           <a class="btn btn-red" id="proPayBtn" href="#subscribe">Pay $15 one-time via Chime — $DDBABY12</a>
           <a class="btn btn-red" id="proAnnualBtn" href="#subscribe" style="display:none">Pay $15 one-time via Chime for annual access — $DDBABY12</a>
         </p>
-        <p class="fine" id="proPayNote" style="margin-top:10px">One-time $15 payment only via Chime to $DDBABY12 — not a recurring charge and does not auto-renew.</p>
+        <p class="fine" id="proPayNote" style="margin-top:10px">One-time $15 payment via Chime to $DDBABY12 or via Cash App to $dismukes2 — not a recurring charge and does not auto-renew.</p>
       </article>
     </div>
     <p class="fine" style="margin-top:14px">Leagues covered: NFL · NBA · MLB · NHL · College Football · College Basketball · MLS · Premier League · WNBA · UFC &amp; Boxing.</p>
@@ -272,7 +272,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
       <div>
         <div class="label">Subscribe</div>
         <h3>Get ScoreZone in your inbox</h3>
-        <p>For Pro, pay via Chime — send <strong>$15 one-time to $DDBABY12 via Chime, not a recurring subscription</strong>. Annual access is the same price: <strong>Pay $15 one-time via Chime to $DDBABY12 for annual access — it does not charge $120.</strong> Open your Chime app, send $15 to $DDBABY12, then use this email form for the Free Preview, or to tell us your email and teams after paying.</p>
+        <p>For Pro, pay via Chime — send <strong>$15 one-time to $DDBABY12 via Chime, not a recurring subscription</strong>. Or pay via Cash App — send <strong>$15 one-time to $dismukes2</strong> (<a href="https://cash.app/$dismukes2">Pay on Cash App — $dismukes2</a>), also not recurring. Annual access is the same price: <strong>Pay $15 one-time via Chime to $DDBABY12 for annual access — it does not charge $120.</strong> Open your Chime app, send $15 to $DDBABY12, then use this email form for the Free Preview, or to tell us your email and teams after paying.</p>
         <p style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px"><span class="btn btn-red">In Chime: Send $15 to $DDBABY12</span><span class="btn btn-outline">Annual access: same $15 to $DDBABY12</span></p>
         <p class="fine" style="margin-top:8px">Not a subscription payment — this is $15 one time via Chime to $DDBABY12, not $15 every month, and annual access does not charge $120.</p>
       </div>
@@ -365,7 +365,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
     document.getElementById("proPer").textContent = isAnnual ? "one-time payment via Chime to $DDBABY12 for annual access — not a recurring subscription" : "one-time payment via Chime to $DDBABY12 — not a recurring subscription";
     document.getElementById("proPayBtn").style.display = isAnnual ? "none" : "";
     document.getElementById("proAnnualBtn").style.display = isAnnual ? "" : "none";
-    document.getElementById("proPayNote").textContent = isAnnual ? "Annual access is $15 one time via Chime to $DDBABY12. It does not charge $120, does not charge $15 every month, and does not auto-renew." : "One-time $15 payment only via Chime to $DDBABY12 — not a recurring charge and does not auto-renew.";
+    document.getElementById("proPayNote").textContent = isAnnual ? "Annual access is $15 one time via Chime to $DDBABY12. It does not charge $120, does not charge $15 every month, and does not auto-renew." : "One-time $15 payment via Chime to $DDBABY12 or via Cash App to $dismukes2 — not a recurring charge and does not auto-renew.";
     document.getElementById("planSel").selectedIndex = isAnnual ? 1 : 0;
   }
   monthly.addEventListener("click", function(){ setBilling(false); });
